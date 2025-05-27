@@ -1,5 +1,7 @@
+
 @layer reset, init, components;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&display=swap');
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);
 @import url(components.css) layer(components);
@@ -8,7 +10,6 @@
 
 @layer init {
     :root {
-
         /* Barvy */
         --primary: #E74025;
         --background-light: #FFFFFF;
@@ -38,4 +39,12 @@
         padding: 0px;
     }
 
+}
+
+
+/* Layout */
+
+.hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 6.33%, rgba(0, 0, 0, 0.00) 99.99%), linear-gradient(279deg, rgba(0, 0, 0, 0.00) 20.36%, rgba(0, 0, 0, 0.48) 52.78%, rgba(0, 0, 0, 0.60) 94.92%), url('/images/background--kamion.png') lightgray 50% / cover no-repeat;
+    height: 80vh;
 }

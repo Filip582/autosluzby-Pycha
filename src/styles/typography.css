@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&display=swap');
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +51,7 @@ p{
     font-weight: 500;
     line-height: normal;
 }
-.section__eyebrow{
+.title--eyebrow{
     font-family: 'DM Sans', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
