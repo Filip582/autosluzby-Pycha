@@ -1,0 +1,41 @@
+@layer reset, init, components;
+
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(init);
+@import url(components.css) layer(components);
+
+
+
+@layer init {
+    :root {
+
+        /* Barvy */
+        --primary: #E74025;
+        --background-light: #FFFFFF;
+        --background-dark: #3C3332;
+        --text-dark: #292929;
+        --text-light: #FFFFFF;
+
+        /* Mezery */
+        --section-gap-mobile: 10.1875rem;
+        --section-gap-desktop: 18.75rem;
+        --page-padding-mobile: 0px 1rem;
+        --page-padding-desktop: 0px 9.875rem;
+        --max-width: 100.25rem;
+        --max-width-s: 80rem;
+    }
+    html {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    *{
+        margin: 0px 0px;
+        padding: 0px;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
