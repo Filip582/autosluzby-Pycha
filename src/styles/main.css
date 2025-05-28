@@ -1,6 +1,7 @@
 @layer reset, init, components;
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&display=swap");
+@import "accordion-js/dist/accordion.min.css" layer(reset);
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);
 @import url(components.css) layer(components);
@@ -40,7 +41,7 @@
 /* Layout */
 
 /* Header ----------------> */
-.page__header{
+.page__header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,8 +55,11 @@
   margin: var(--page-padding-mobile);
   z-index: 10;
   border-radius: 0 0 1rem 1rem;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
 }
+
+/* Main -------> */
+
 
 /* hero ------------------> */
 .hero {
@@ -115,4 +119,139 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Section Expirience */
+.expirience {
+  margin-top: var(--section-gap-mobile);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow: hidden;
+}
+.expirience__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--page-padding-mobile);
+  gap: 1.75rem;
+  text-align: center;
+}
+.expirience__content-text {
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.expirience__image {
+  border-radius: 1.75rem;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.expirience__image:nth-child(1) {
+  transform: translateX(-80px);
+}
+.expirience__image:nth-child(3) {
+  transform: translateX(80px);
+}
+
+/* Sluzby --------------> */
+.sluzby {
+  margin-top: var(--section-gap-mobile);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--page-padding-mobile);
+  gap: 2rem;
+}
+.sluzby__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sluzby__content-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+.sluzby__content-card {
+  position: relative;
+  border-radius: 1.75rem;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 250px;
+}
+.sluzby__content-card p {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 2;
+}
+.linear-gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 11.42%, rgba(0, 0, 0, 0.80) 81.46%);
+}
+
+/* Question -------------> */
+.question {
+  margin-top: var(--section-gap-mobile);
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding-mobile);
+  position: relative;
+  background-color: var(--background-dark);
+}
+.question__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: var(--page-padding-mobile);
+}
+.question__arrow{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.question__arrow-oblouk{
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+.question__arrow-wheel{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.question__title{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--text-light);
+  margin-top: var(--section-gap-mobile);
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--page-padding-mobile);
+    padding-top: var(--section-gap-mobile);
+    background-color: var(--background-dark);
+    
+}
+.time-table--item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-light);
 }
