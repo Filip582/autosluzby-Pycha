@@ -7,10 +7,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1{
     font-family: 'DM Sans', sans-serif;
-    font-size: 4.375rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    line-height: 4.375rem;
-    letter-spacing: 0.04375rem;
+    line-height: 2.75rem;
+    letter-spacing: 0.025rem;
     color: var(--text-light);
 }
 h2{
@@ -23,10 +23,13 @@ h2{
 }
 p{
     font-family: 'Hind', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: normal;
     color: var(--text-dark);
+}
+li{
+    list-style-type: none;
 }
 .button{
     font-family: 'Hind', sans-serif;
@@ -53,11 +56,11 @@ p{
 }
 .title--eyebrow{
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 0.015rem;
+    letter-spacing: 0.0125rem;
     text-transform: uppercase;
     color: var(--primary);
 }
@@ -66,8 +69,26 @@ a{
 }
 .logo{
     color: var(--text-dark);
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+}
+.hero__content-text{
+    color: var(--text-light);
+    font-family: 'Hind', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hero__contact-text{
+    color: var(--text-light);
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }

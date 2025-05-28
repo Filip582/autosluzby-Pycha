@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
     <title>Autosluzby Pycha</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page__header">
-        <a class="logo" href="#">Autoslužby Luboš Pýcha</a>
-        <nav>
-            <ul>
-                <li><a href="#">Úvod</a></li>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#">Služby</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a class="logo" href="#">Autoslužby Luboš Pýcha</a>
+      <div class="hamburger-nav hamburger-zone">
+        <menu class="navigation__list">
+          <li><a href="#">Úvod</a></li>
+          <li><a href="#">O nás</a></li>
+          <li><a href="#">Služby</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </menu>
+      </div>
+
+      <a
+        href="javascript:void(0)"
+        class="hamburger hamburger-btn hamburger-zone"
+        role="button"
+        aria-label="menu toggle"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </header>
 
     <main class="page__main">
-        <section class="hero hero--main">
-            <div class="hero__title">
-                <p class="title--eyebrow">Kvalitní</p>
-                <h1>Odtahová služba a autoservis</h1>
+      <section class="hero hero--main">
+        <div class="hero__content">
+          <div class="hero__title">
+            <p class="title--eyebrow">Kvalitní</p>
+            <h1>Odtahová služba a autoservis</h1>
+          </div>
+          <p class="hero__content-text">
+            Ať už potřebujete opravit vozidlo, nebo odtahovou službu, jsme tu
+            pro vás
+          </p>
+          <div class="hero__contact">
+            <div class="hero__contact-item">
+              <img src="/images/phone.svg" alt="phone icon" />
+              <a href="tel:+420725723172" class="hero__contact-text"
+                >+420 725 723 172</a
+              >
             </div>
-            <div class="hero__contact">
-                <div class="hero__contact-item">
-                    <img src="/images/phone.svg" alt="phone icon">
-                    <a href="tel:+420725723172" class="hero__contact-text">+420 725 723 172</a>
-                </div>
-                <div class="hero__contact-item">
-                    <img src="/images/location-point.svg" alt="location-point icon">
-                    <a target="_blank" href="https://maps.google.com/?q=Lidická+566/34,+Vlašim" class="hero__contact-text">Lidická 566/34, Vlašim</a>
-                </div>
+            <div class="hero__contact-item">
+              <img src="/images/location-point.svg" alt="location-point icon" />
+              <a
+                target="_blank"
+                href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
+                class="hero__contact-text"
+                >Lidická 566/34, Vlašim</a
+              >
             </div>
-        </section>
+          </div>
+          <div class="hero__buttons">
+            <a href="#" class="button">Kontaktovat</a>
+            <a href="#" class="button button--grey">Naše služby</a>
+          </div>
+        </div>
+        <div class="hero__arrow">
+          <img
+            class="hero__arrow--oblouk"
+            src="/images/oblouk.svg"
+            alt="oblouk"
+          />
+          <img
+            class="hero__arrow--down"
+            src="/images/arrow--down.svg"
+            alt="arrow--down"
+          />
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
