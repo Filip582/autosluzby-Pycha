@@ -129,3 +129,11 @@ a{
     font-weight: 400;
     line-height: normal;
 }
+.navigation__list-item{
+    color: var(--text-dark);
+    font-family: 'DM Sans' , sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
