@@ -246,7 +246,22 @@
     padding: var(--page-padding-mobile);
     padding-top: var(--section-gap-mobile);
     background-color: var(--background-dark);
-    
+    border: none;
+    color: var(--text-light);
+}
+.contact__content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.contact__content-item{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.contact__content-item img{
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .time-table--item{
     display: flex;
@@ -254,4 +269,22 @@
     align-items: center;
     justify-content: space-between;
     color: var(--text-light);
+}
+.contact__map{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 1.75rem;
+    height: 30.75rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Footer */
+footer{
+  border: none;
+  padding-top: var(--section-gap-mobile);
+  text-align: center;
+  padding-bottom: 0.5rem;
+  background-color: var(--background-dark);
+  color: var(--text-light);
 }

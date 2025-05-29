@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
           }  
       });
   }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
   // ...tvůj kód pro hamburger...
 
   
@@ -20,4 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 300,
     showMultiple: false
   });
+
+
+
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
