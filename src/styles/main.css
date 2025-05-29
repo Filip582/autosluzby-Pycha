@@ -53,9 +53,13 @@
   left: 0;
   right: 0;
   margin: var(--page-padding-mobile);
-  z-index: 10;
+  z-index: 100;
   border-radius: 0 0 1rem 1rem;
   padding: 0.75rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.page__header.active{
+  border-radius: 0 0 0 0;
 }
 
 /* Main -------> */
@@ -190,10 +194,7 @@
 }
 .linear-gradient{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 11.42%, rgba(0, 0, 0, 0.80) 81.46%);
 }
 

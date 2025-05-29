@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
           e.preventDefault();
           for (const element of hamelmnts) {
               element.classList.toggle("active");
-          }  
+          }
+          const pageHeader = document.querySelector(".page__header");
+          if (pageHeader) {
+              pageHeader.classList.toggle("active");
+          }
       });
   }
 
