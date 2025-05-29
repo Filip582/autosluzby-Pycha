@@ -15,6 +15,7 @@
     "vituum": "^1.2.0"
   },
   "dependencies": {
-    "accordion-js": "^3.4.1"
+    "accordion-js": "^3.4.1",
+    "gsap": "^3.13.0"
   }
 }

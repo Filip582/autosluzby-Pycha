@@ -70,10 +70,16 @@ a{
 .logo{
     color: var(--text-dark);
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+@media screen and (min-width: 410px) {
+    .logo{
+        font-size: 1.5rem;
+    }
+    
 }
 .hero__content-text{
     color: var(--text-light);
