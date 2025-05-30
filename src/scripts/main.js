@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
-
+  const isDesktop = window.matchMedia("(min-width: 900px)").matches;
   gsap.to(".expirience__image:nth-child(1)", {
-    x: "-20%",
+    x: isDesktop ? "0%" : "-20%",
     scrollTrigger: {
       trigger: ".expirience__image:nth-child(1)",
       start: "top 100%",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   })
   gsap.to(".expirience__image:nth-child(3)", {
-    x: "20%",
+    x: isDesktop ? "0%" : "20%",
     scrollTrigger: {
       trigger: ".expirience__image:nth-child(3)",
       start: "top 100%",
@@ -91,5 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  
 
 });
