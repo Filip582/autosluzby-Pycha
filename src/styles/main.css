@@ -81,7 +81,8 @@
       rgba(0, 0, 0, 0.6) 94.92%
     ),
     url("/images/background--kamion.png") lightgray 50% / cover no-repeat;
-  height: 80vh;
+  height: 90vh;
+  min-height: 600px;
 }
 .hero--main {
   display: flex;
@@ -122,9 +123,16 @@
 }
 .hero__arrow--down {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hero__buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Section Expirience */

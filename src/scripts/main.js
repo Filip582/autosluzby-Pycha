@@ -73,6 +73,23 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   })
 
+  ScrollTrigger.create({
+    trigger: ".hero__arrow--down",
+    start: "top 50%",
+    onEnter: () => {
+      gsap.to(".hero__arrow--down", {
+        y: 30,
+        duration: 1,
+        ease: "bounce.out"
+      });
+    },
+    onLeaveBack: () => {
+      gsap.to(".hero__arrow--down", {
+        y: 0,
+        duration: 0.4,
+        ease: "power1.inOut"
+      });
+    }
+  });
+
 });
-
-
