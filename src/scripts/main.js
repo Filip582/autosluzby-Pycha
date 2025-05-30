@@ -92,6 +92,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
+  const retez = document.querySelector('.retez-anim');
+
+  document.querySelectorAll('.sluzby__content-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      if (!retez) return;
+      // Zjisti pozici karty
+      const rect = card.getBoundingClientRect();
+      // Vypočítej střed karty vůči viewportu
+      const left = rect.left + rect.width / 2 - 9 + window.scrollX; // 9 je polovina šířky řetězu (18px)
+      // Nastav pozici řetězu (zůstává nahoře)
+      retez.style.left = `${left}px`;
+      retez.style.display = 'block';
+      retez.style.opacity = '1';
+
+      // Animace řetězu dolů k hornímu okraji karty (ale top je vždy 0)
+      gsap.fromTo(retez,
+        { top: '-420px', opacity: 1 },
+        { top: '0px', opacity: 1, duration: 0.4, ease: "power1.out" }
+      );
+      // Animace karty nahoru
+      gsap.to(card, { y: -20, duration: 0.3, ease: "power1.out" });
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (!retez) return;
+      // Animace řetězu zpět nahoru
+      gsap.to(retez, {
+        top: '-420px',
+        opacity: 1,
+        duration: 0.3,
+        onComplete: () => {
+          retez.style.display = 'none';
+        }
+      });
+      gsap.to(card, { y: 0, duration: 0.3, ease: "power1.in" });
+    });
+  });
 
 });
