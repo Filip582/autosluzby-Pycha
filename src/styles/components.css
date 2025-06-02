@@ -38,10 +38,6 @@
   cursor: pointer;
 }
 
-div:has(> .hamburger) {
-  display: none;
-}
-
 .hamburger span {
   position: absolute;
   height: 6px;
@@ -132,7 +128,6 @@ div:has(> .hamburger) {
     align-items: center;
     gap: .5rem;
 }
-
 
 /* Accordion */
 .accordion {

@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  gsap.set(".hero__arrow--down", { y: 0 });
 
   // const retez = document.querySelector('.retez-anim');
 
@@ -131,5 +132,19 @@ document.addEventListener("DOMContentLoaded", () => {
   //     gsap.to(card, { y: 0, duration: 0.3, ease: "power1.in" });
   //   });
   // });
-
+ 
+  ['contact', 'expirience', 'sluzby'].forEach(id => {
+    document.querySelectorAll(`a[href="#${id}"]`).forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      });
+    });
+  });
 });

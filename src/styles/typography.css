@@ -102,7 +102,7 @@ a{
     color: var(--text-light);
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 .question__title p{
@@ -141,5 +141,21 @@ a{
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+    transition: color 0.2s ease-in-out;
+}
+.time-table--item p{
+    font-weight: 300;
+}
+.navigation__list-item:hover{
+    color: var(--primary);
+}
+
+footer p{
+    color: var(--text-light);
+    font-family: 'Hind', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
     line-height: normal;
 }
