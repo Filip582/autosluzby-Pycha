@@ -3,16 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Odtahová služba a autoservis Vlašim. Rychlá pomoc, profesionální servis, příprava na STK, opravy motoru a další služby. Kontaktujte Autoslužby Luboš Pýcha."
+    />
+    <meta
+      name="keywords"
+      content="odtahová služba, autoservis, Vlašim, oprava auta, STK, pneuservis, Luboš Pýcha"
+    />
+    <meta name="author" content="Autoslužby Luboš Pýcha" />
+    <link rel="canonical" href="#" />
+    <link rel="icon" href="#" type="image/x-icon" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "#",
+        "@type": "AutoRepair",
+        "name": "Autoslužby Luboš Pýcha",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lidická 566/34",
+          "addressLocality": "Vlašim",
+          "addressCountry": "CZ"
+        },
+        "telephone": "+420725723172",
+        "email": "#",
+        "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-12:00"],
+        "url": "#"
+      }
+    </script>
+
     <title>Autosluzby Pycha</title>
-    <script type="module" crossorigin src="/autosluzby-Pycha/assets/index-DZTMND7j.js"></script>
+    <script type="module" crossorigin src="/autosluzby-Pycha/assets/index-shEjlmrK.js"></script>
     <link rel="modulepreload" crossorigin href="/autosluzby-Pycha/assets/main-B294vugT.js">
-    <link rel="stylesheet" crossorigin href="/autosluzby-Pycha/assets/main-Becko25o.css">
+    <link rel="stylesheet" crossorigin href="/autosluzby-Pycha/assets/main-x-_DuNHy.css">
   </head>
   <body>
     <header class="page__header">
       <a class="logo" href="#" aria-label="Domů">Autoslužby Luboš Pýcha</a>
       <nav class="hamburger-nav hamburger-zone" aria-label="Hlavní navigace">
-        <menu class="navigation__list">
+        <ul class="navigation__list">
           <li><a class="navigation__list-item" href="#hero">Úvod</a></li>
           <li><a class="navigation__list-item" href="#expirience">O nás</a></li>
           <li><a class="navigation__list-item" href="#sluzby">Služby</a></li>
@@ -21,22 +51,21 @@
               >Kontakt</a
             >
           </li>
-        </menu>
+        </ul>
       </nav>
-      <a
+      <button
+        type="button"
+        id="hamburger-btn"
         class="hamburger hamburger-btn hamburger-zone"
         aria-label="Otevřít nebo zavřít menu"
-        aria-controls="main-navigation"
         aria-expanded="false"
-        type="button"
       >
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </button>
     </header>
-
-    <main class="page__main" role="main">
+    <main class="page__main">
       <section id="hero" class="hero hero--main">
         <div class="hero__content">
           <div class="hero__title">
@@ -75,7 +104,10 @@
             </div>
           </div>
           <div class="hero__buttons">
-            <a href="tel:+420725723172" class="button" aria-label="Kontaktovat nás"
+            <a
+              href="tel:+420725723172"
+              class="button"
+              aria-label="Kontaktovat nás"
               >Kontaktovat</a
             >
             <a
@@ -222,7 +254,7 @@
               kladených dotazech
             </p>
           </div>
-          <div class="accordion" aria-label="Často kladené dotazy">
+          <div class="accordion" aria-labelledby="faq-heading">
             <div class="ac">
               <h2 class="ac-header">
                 <button type="button" class="ac-trigger">
@@ -293,12 +325,7 @@
         </div>
       </section>
 
-      <section
-        id="contact"
-        class="contact"
-        role="region"
-        aria-labelledby="contact-heading"
-      >
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
         <div class="contact__content">
           <h2 id="contact-heading">Kontakt</h2>
           <div class="contact__content-items">
@@ -375,15 +402,14 @@
           src="https://www.google.com/maps?q=Lidická+566/34,+Vlašim&output=embed"
           height="300"
           style="border: 0"
-          allowfullscreen="yes"
+          allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        ></iframe>
       </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
       <p>&copy; copyright <span id="year">2025</span></p>
     </footer>
     <!-- <img src="/images/retez.svg" alt="řetěz" class="retez-anim" style="display:none;" /> -->
