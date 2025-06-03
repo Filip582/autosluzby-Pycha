@@ -3,29 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
     <title>Autosluzby Pycha</title>
-    <script type="module" crossorigin src="/autosluzby-Pycha/assets/index-CgSb0OGd.js"></script>
+    <script type="module" crossorigin src="/autosluzby-Pycha/assets/index-DZTMND7j.js"></script>
     <link rel="modulepreload" crossorigin href="/autosluzby-Pycha/assets/main-B294vugT.js">
-    <link rel="stylesheet" crossorigin href="/autosluzby-Pycha/assets/main-D-CHzHmA.css">
+    <link rel="stylesheet" crossorigin href="/autosluzby-Pycha/assets/main-Becko25o.css">
   </head>
   <body>
     <header class="page__header">
-      <a class="logo" href="#">Autoslužby Luboš Pýcha</a>
-      <div class="hamburger-nav hamburger-zone">
+      <a class="logo" href="#" aria-label="Domů">Autoslužby Luboš Pýcha</a>
+      <nav class="hamburger-nav hamburger-zone" aria-label="Hlavní navigace">
         <menu class="navigation__list">
           <li><a class="navigation__list-item" href="#hero">Úvod</a></li>
           <li><a class="navigation__list-item" href="#expirience">O nás</a></li>
           <li><a class="navigation__list-item" href="#sluzby">Služby</a></li>
-          <li><a class="navigation__list-item button button--grey" href="#contact">Kontakt</a></li>
+          <li>
+            <a class="navigation__list-item button button--grey" href="#contact"
+              >Kontakt</a
+            >
+          </li>
         </menu>
-      </div>
-
+      </nav>
       <a
-        href="javascript:void(0)"
         class="hamburger hamburger-btn hamburger-zone"
-        role="button"
-        aria-label="menu toggle"
+        aria-label="Otevřít nebo zavřít menu"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        type="button"
       >
         <span></span>
         <span></span>
@@ -33,7 +36,7 @@
       </a>
     </header>
 
-    <main class="page__main">
+    <main class="page__main" role="main">
       <section id="hero" class="hero hero--main">
         <div class="hero__content">
           <div class="hero__title">
@@ -46,44 +49,74 @@
           </p>
           <div class="hero__contact">
             <div class="hero__contact-item">
-              <img src="/autosluzby-Pycha/images/phone.svg" alt="Telefon: " />
-              <a href="tel:+420725723172" class="hero__contact-text"
-                >+420 725 723 172</a
+              <a
+                href="tel:+420725723172"
+                class="hero__contact-text"
+                aria-label="Telefon: +420 725 723 172"
               >
+                <img src="/autosluzby-Pycha/images/phone.svg" alt="" aria-hidden="true" />
+                +420 725 723 172
+              </a>
             </div>
             <div class="hero__contact-item">
-              <img src="/autosluzby-Pycha/images/location-point.svg" alt="Lokace: " />
               <a
                 target="_blank"
                 href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
                 class="hero__contact-text"
-                >Lidická 566/34, Vlašim</a
+                aria-label="Adresa: Lidická 566/34, Vlašim"
               >
+                <img
+                  src="/autosluzby-Pycha/images/location-point.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Lidická 566/34, Vlašim
+              </a>
             </div>
           </div>
           <div class="hero__buttons">
-            <a href="#" class="button">Kontaktovat</a>
-            <a href="#" class="button button--grey">Naše služby</a>
+            <a href="tel:+420725723172" class="button" aria-label="Kontaktovat nás"
+              >Kontaktovat</a
+            >
+            <a
+              href="#sluzby"
+              class="button button--grey"
+              aria-label="Zobrazit naše služby"
+              >Naše služby</a
+            >
           </div>
         </div>
-        <a href="#expirience" class="hero__arrow">
+        <a
+          href="#expirience"
+          class="hero__arrow"
+          aria-label="Sjet na sekci O nás"
+        >
           <img
             class="hero__arrow--oblouk"
             src="/autosluzby-Pycha/images/oblouk.svg"
-            alt="oblouk"
+            alt=""
+            aria-hidden="true"
           />
           <img
             class="hero__arrow--down"
             src="/autosluzby-Pycha/images/arrow--down.svg"
-            alt="arrow--down"
+            alt="Šipka dolů"
           />
         </a>
       </section>
 
       <section id="expirience" class="expirience">
-        <img class="expirience__image" src="/autosluzby-Pycha/images/expirience__image-1.png" alt="expirience image" />
+        <img
+          class="expirience__image"
+          src="/autosluzby-Pycha/images/expirience__image-1.png"
+          alt="Auto v servisu"
+        />
         <div class="expirience__content">
-          <img class="expirience__wheel" src="/autosluzby-Pycha/images/wheel.svg" alt="wheel icon" />
+          <img
+            class="expirience__wheel"
+            src="/autosluzby-Pycha/images/wheel.svg"
+            alt="Ikona kola"
+          />
           <div class="expirience__content-text">
             <h2>Několik let zkušeností</h2>
             <p>
@@ -92,189 +125,265 @@
               poskytnout vám výjimečné služby.
             </p>
           </div>
-          <a class="button" href="#">Objednat se</a>
+          <a class="button" href="#" aria-label="Objednat se do servisu"
+            >Objednat se</a
+          >
         </div>
-
-        <img class="expirience__image" src="/autosluzby-Pycha/images/expirience__image-2.png" alt="expirience image" />
+        <img
+          class="expirience__image"
+          src="/autosluzby-Pycha/images/expirience__image-2.png"
+          alt="Auto po opravě"
+        />
       </section>
 
       <section id="sluzby" class="sluzby">
         <div class="sluzby__content-text grid-item--2x1">
-            <h2>Naše služby</h2>
-            <p>Nabízíme širokou paletu služeb. Od klasického servisu auto, až po odtahovou službu.</p>
+          <h2>Naše služby</h2>
+          <p>
+            Nabízíme širokou paletu služeb. Od klasického servisu auta, až po
+            odtahovou službu.
+          </p>
         </div>
-            <div class="sluzby__content-card grid-item--2x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-1.png" alt="content card image">
-                <p>Odtahová služba</p>
-                <div class="linear-gradient"></div>
-            </div>
-            <div class="sluzby__content-card grid-item--2x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-2.png" alt="content card image">
-                <p>Oprava auta</p>
-                <div class="linear-gradient"></div>
-            </div>
-            <div class="sluzby__content-card grid-item--2x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-3.png" alt="content card image">
-                <p>Servis vozu</p>
-                <div class="linear-gradient"></div>
-            </div>
-            <div class="sluzby__content-card grid-item--1x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-4.png" alt="content card image">
-                <p>Příprava na STK</p>
-                <div class="linear-gradient"></div>
-            </div>
-            <div class="sluzby__content-card grid-item--1x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-5.png" alt="content card image">
-                <p>Opravy motoru</p>
-                <div class="linear-gradient"></div>
-            </div>
-            <div class="sluzby__content-card grid-item--1x1">
-                <img class="content-card__img img-responsive" src="/autosluzby-Pycha/images/sluzby__image-6.png" alt="content card image">
-                <p>Přezutí pneu</p>
-                <div class="linear-gradient"></div>
-            </div>
+        <div class="sluzby__content-card grid-item--2x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-1.png"
+            alt="Odtahová služba"
+          />
+          <p>Odtahová služba</p>
+          <div class="linear-gradient"></div>
+        </div>
+        <div class="sluzby__content-card grid-item--2x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-2.png"
+            alt="Oprava auta"
+          />
+          <p>Oprava auta</p>
+          <div class="linear-gradient"></div>
+        </div>
+        <div class="sluzby__content-card grid-item--2x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-3.png"
+            alt="Servis vozu"
+          />
+          <p>Servis vozu</p>
+          <div class="linear-gradient"></div>
+        </div>
+        <div class="sluzby__content-card grid-item--1x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-4.png"
+            alt="Příprava na STK"
+          />
+          <p>Příprava na STK</p>
+          <div class="linear-gradient"></div>
+        </div>
+        <div class="sluzby__content-card grid-item--1x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-5.png"
+            alt="Opravy motoru"
+          />
+          <p>Opravy motoru</p>
+          <div class="linear-gradient"></div>
+        </div>
+        <div class="sluzby__content-card grid-item--1x1">
+          <img
+            class="content-card__img img-responsive"
+            src="/autosluzby-Pycha/images/sluzby__image-6.png"
+            alt="Přezutí pneu"
+          />
+          <p>Přezutí pneu</p>
+          <div class="linear-gradient"></div>
+        </div>
       </section>
 
-      <section class="question">
+      <section class="question" aria-labelledby="faq-heading">
         <div class="question__arrow">
           <img
             class="question__arrow-oblouk"
             src="/autosluzby-Pycha/images/oblouk.svg"
-            alt="oblouk"
+            alt=""
+            aria-hidden="true"
           />
           <img
             class="question__wheel question__arrow-wheel"
             src="/autosluzby-Pycha/images/wheel.svg"
-            alt="arrow--down"
+            alt="Kolo"
           />
         </div>
         <div class="question__content">
-            <div class="question__title">
-                <h2>Často kladené dotazy</h2>
-                <p>Máte otázku, nebo něčemu nerozumíte? Možná odpověď najdete v často kladených dotazech</p>
+          <div class="question__title">
+            <h2 id="faq-heading">Často kladené dotazy</h2>
+            <p>
+              Máte otázku, nebo něčemu nerozumíte? Možná odpověď najdete v často
+              kladených dotazech
+            </p>
+          </div>
+          <div class="accordion" aria-label="Často kladené dotazy">
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Je potřeba se na servis objednat předem?
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Doporučujeme se objednat předem, abychom vám mohli garantovat
+                  co nejkratší čekací dobu.
+                </p>
+              </div>
             </div>
-            <div class="accordion">
-                <div class="ac">
-                    <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Je potřeba se na servis objednat předem?</button>
-                    </h2>
-                    <div class="ac-panel">
-                    <p class="ac-text">Doporučujeme se objednat předem, abychom vám mohli garantovat co nejkratší čekací dobu.</p>
-                    </div>
-                </div>
-
-                <div class="ac">
-                    <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Jak dlouho trvá běžná servisní prohlídka?</button>
-                    </h2>
-                    <div class="ac-panel">
-                    <p class="ac-text">Běžná prohlídka zabere přibližně 1–2 hodiny, podle rozsahu a typu vozidla.</p>
-                    </div>
-                </div>
-
-                <div class="ac">
-                    <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Provádíte také přípravu na STK a emisní kontrolu?</button>
-                    </h2>
-                    <div class="ac-panel">
-                    <p class="ac-text">Ano, připravíme váš vůz na STK včetně základní kontroly a případné opravy závad.</p>
-                    </div>
-                </div>
-
-                <div class="ac">
-                    <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Jak rychle můžete přijet po zavolání?</button>
-                    </h2>
-                    <div class="ac-panel">
-                    <p class="ac-text">Většinou dorazíme do 30–60 minut, podle dopravní situace a vzdálenosti. Vždy se snažíme dorazit co nejdříve.</p>
-                    </div>
-                </div>
-
-                <div class="ac">
-                    <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Kolik stojí odtah vozidla a účtujete si více za víkendy?</button>
-                    </h2>
-                    <div class="ac-panel">
-                    <p class="ac-text">Cena závisí na vzdálenosti a čase zásahu. Máme nonstop provoz, víkendy a noční zásahy jsou možné, ale mohou být zpoplatněny příplatkem.</p>
-                    </div>
-                </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Jak dlouho trvá běžná servisní prohlídka?
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Běžná prohlídka zabere přibližně 1–2 hodiny, podle rozsahu a
+                  typu vozidla.
+                </p>
+              </div>
             </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Provádíte také přípravu na STK a emisní kontrolu?
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Ano, připravíme váš vůz na STK včetně základní kontroly a
+                  případné opravy závad.
+                </p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Jak rychle můžete přijet po zavolání?
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Většinou dorazíme do 30–60 minut, podle dopravní situace a
+                  vzdálenosti. Vždy se snažíme dorazit co nejdříve.
+                </p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Kolik stojí odtah vozidla a účtujete si více za víkendy?
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Cena závisí na vzdálenosti a čase zásahu. Máme nonstop provoz,
+                  víkendy a noční zásahy jsou možné, ale mohou být zpoplatněny
+                  příplatkem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section
+        id="contact"
+        class="contact"
+        role="region"
+        aria-labelledby="contact-heading"
+      >
         <div class="contact__content">
-            <h2>Kontakt</h2>
-            <div class="contact__content-items">
-              <div class="contact__content-item">
-                  <img src="/autosluzby-Pycha/images/phone.svg" alt="Telefon: " />
-                  <a href="tel:+420725723172" class="contact__content-text"
-                    >+420 725 723 172</a
-                  >
-              </div>
-              <div class="contact__content-item">
-                  <img src="/autosluzby-Pycha/images/location-point.svg" alt="Lokace: " />
-                  <a
-                    target="_blank"
-                    href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
-                    class="contact__content-text"
-                    >Lidická 566/34, Vlašim</a
-                  >
-              </div>
-              <div class="contact__content-item">
-                  <img src="/autosluzby-Pycha/images/email.svg" alt="Email: " />
-                  <a href="mailto:email.vas@email.com"
-                      >email.vas@email.com</a
-                  >
-              </div>
+          <h2 id="contact-heading">Kontakt</h2>
+          <div class="contact__content-items">
+            <div class="contact__content-item">
+              <a
+                href="tel:+420725723172"
+                class="contact__content-text"
+                aria-label="Telefon: +420 725 723 172"
+              >
+                <img src="/autosluzby-Pycha/images/phone.svg" alt="" aria-hidden="true" />
+                +420 725 723 172
+              </a>
             </div>
-              <div class="contact__time-table">
-                <div class="time-table--item">
-                    <p>Pondělí:</p>
-                    <p>9:00 - 17:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Úterý:</p>
-                    <p>9:00 - 17:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Středa:</p>
-                    <p>9:00 - 17:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Čtvrtek:</p>
-                    <p>9:00 - 17:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Pátek:</p>
-                    <p>9:00 - 17:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Sobota:</p>
-                    <p>9:00 - 12:00</p>
-                </div>
-                <div class="time-table--item">
-                    <p>Neděle:</p>
-                    <p>Zavřeno</p>
-                </div>
+            <div class="contact__content-item">
+              <a
+                target="_blank"
+                href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
+                class="contact__content-text"
+                aria-label="Adresa: Lidická 566/34, Vlašim"
+              >
+                <img
+                  src="/autosluzby-Pycha/images/location-point.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Lidická 566/34, Vlašim
+              </a>
             </div>
+            <div class="contact__content-item">
+              <a
+                href="mailto:email.vas@email.com"
+                class="contact__content-text"
+                aria-label="E-mail: email.vas@email.com"
+              >
+                <img src="/autosluzby-Pycha/images/email.svg" alt="" aria-hidden="true" />
+                email.vas@email.com
+              </a>
+            </div>
+          </div>
+          <div class="contact__time-table">
+            <div class="time-table--item">
+              <p>Pondělí:</p>
+              <p>9:00 - 17:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Úterý:</p>
+              <p>9:00 - 17:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Středa:</p>
+              <p>9:00 - 17:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Čtvrtek:</p>
+              <p>9:00 - 17:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Pátek:</p>
+              <p>9:00 - 17:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Sobota:</p>
+              <p>9:00 - 12:00</p>
+            </div>
+            <div class="time-table--item">
+              <p>Neděle:</p>
+              <p>Zavřeno</p>
+            </div>
+          </div>
         </div>
-        
-
         <iframe
           class="contact__map"
           title="Google Map of Autoslužby Pycha"
           src="https://www.google.com/maps?q=Lidická+566/34,+Vlašim&output=embed"
-          
           height="300"
-          style="border:0;"
+          style="border: 0"
           allowfullscreen="yes"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; copyright <span id="year">2025</span></p>
     </footer>
     <!-- <img src="/images/retez.svg" alt="řetěz" class="retez-anim" style="display:none;" /> -->
