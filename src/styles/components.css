@@ -20,6 +20,11 @@
   background-color: var(--background-dark);
   color: var(--text-light);
 }
+#hamburger-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .img-responsive {
   display: block;
   width: 100%;
