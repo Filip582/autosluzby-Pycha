@@ -154,3 +154,15 @@
 .ac-trigger{
     padding: 0 3rem 0rem 0;
 }
+
+
+.text-underline{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+
+.item--none{
+  display: none;
+}
