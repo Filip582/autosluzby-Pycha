@@ -106,6 +106,15 @@ a{
     font-weight: 500;
     line-height: normal;
 }
+.service-info-text{
+    color: var(--text-dark);
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .sluzby__content-card p{
     color: var(--text-light);
     font-size: 1.5rem;
