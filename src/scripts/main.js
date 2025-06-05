@@ -18,80 +18,101 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-
-
-
-  
-  new Accordion('.accordion', {
-    duration: 300,
-    showMultiple: false
-  });
-
-
+  // Bezpečná inicializace Accordion-js
+  if (document.querySelector('.accordion')) {
+    new Accordion('.accordion', {
+      duration: 300,
+      showMultiple: false
+    });
+  }
 
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
   const isDesktop = window.matchMedia("(min-width: 900px)").matches;
-  gsap.to(".expirience__image:nth-child(1)", {
-    x: isDesktop ? "0%" : "-20%",
-    scrollTrigger: {
-      trigger: ".expirience__image:nth-child(1)",
-      start: "top 100%",
-      end: "center center",
-      scrub: 2,
-    },
-  })
-  gsap.to(".expirience__image:nth-child(3)", {
-    x: isDesktop ? "0%" : "20%",
-    scrollTrigger: {
-      trigger: ".expirience__image:nth-child(3)",
-      start: "top 100%",
-      end: "center 60%",
-      scrub: 2,
-    },
-  })
+  // Animace pouze pokud element existuje
+  if (document.querySelector(".expirience__image:nth-child(1)")) {
+    gsap.to(".expirience__image:nth-child(1)", {
+      x: isDesktop ? "0%" : "-20%",
+      scrollTrigger: {
+        trigger: ".expirience__image:nth-child(1)",
+        start: "top 100%",
+        end: "center center",
+        scrub: 2,
+      },
+    });
+  }
 
-  gsap.to(".expirience__wheel", {
-    rotate: 360,
-    scrollTrigger: {
-      trigger: ".expirience__wheel",
-      start: "top 100%",
-      end: "bottom 0%",
-      scrub: 2,
-    },
-  })
+  if (document.querySelector(".expirience__image:nth-child(3)")) {
+    gsap.to(".expirience__image:nth-child(3)", {
+      x: isDesktop ? "0%" : "20%",
+      scrollTrigger: {
+        trigger: ".expirience__image:nth-child(3)",
+        start: "top 100%",
+        end: "center 60%",
+        scrub: 2,
+      },
+    });
+  }
 
-  gsap.to(".question__wheel", {
-    rotate: 360,
-    scrollTrigger: {
-      trigger: ".question__wheel",
-      start: "top 100%",
-      end: "bottom 0%",
-      scrub: 2,
-    },
-  })
+  if (document.querySelector(".expirience__wheel")) {
+    gsap.to(".expirience__wheel", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".expirience__wheel",
+        start: "top 100%",
+        end: "bottom 0%",
+        scrub: 2,
+      },
+    });
+  }
 
-  ScrollTrigger.create({
-    trigger: ".hero__arrow--down",
-    start: "top 50%",
-    onEnter: () => {
-      gsap.to(".hero__arrow--down", {
-        y: 30,
-        duration: 1,
-        ease: "bounce.out"
-      });
-    },
-    onLeaveBack: () => {
-      gsap.to(".hero__arrow--down", {
-        y: 0,
-        duration: 0.4,
-        ease: "power1.inOut"
-      });
-    }
-  });
-  gsap.set(".hero__arrow--down", { y: 0 });
+  if (document.querySelector(".question__wheel")) {
+    gsap.to(".question__wheel", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".question__wheel",
+        start: "top 100%",
+        end: "bottom 0%",
+        scrub: 2,
+      },
+    });
+  }
+
+  if (document.querySelector(".contact__wheel")) {
+    gsap.to(".contact__wheel", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".contact__wheel",
+        start: "top 100%",
+        end: "bottom 0%",
+        scrub: 2,
+      },
+    });
+  }
+
+  if (document.querySelector(".hero__arrow--down")) {
+    ScrollTrigger.create({
+      trigger: ".hero__arrow--down",
+      start: "top 50%",
+      onEnter: () => {
+        gsap.to(".hero__arrow--down", {
+          y: 30,
+          duration: 1,
+          ease: "bounce.out"
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to(".hero__arrow--down", {
+          y: 0,
+          duration: 0.4,
+          ease: "power1.inOut"
+        });
+      }
+    });
+    gsap.set(".hero__arrow--down", { y: 0 });
+  }
 
   // const retez = document.querySelector('.retez-anim');
 
