@@ -117,6 +117,18 @@
 
 .hero--sluzby{
   height: 40vh;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 6.33%,
+      rgba(0, 0, 0, 0) 99.99%
+    ),
+    linear-gradient(
+      279deg,
+      rgba(0, 0, 0, 0) 20.36%,
+      rgba(0, 0, 0, 0.48) 52.78%,
+      rgba(0, 0, 0, 0.6) 94.92%
+    ),
+   url("/images/background__image-2.png") lightgray 50% / cover no-repeat;
 }
 .hero__content {
   display: flex;
@@ -185,7 +197,7 @@
   gap: 3rem;
   overflow-x: hidden;
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: var(--section-gap-mobile) auto 0 auto;
 }
 .expirience__content {
   display: flex;

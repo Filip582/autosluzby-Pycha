@@ -41,9 +41,9 @@
       <a class="logo" href="#" aria-label="Domů">Autoslužby Luboš Pýcha</a>
       <nav class="hamburger-nav hamburger-zone" aria-label="Hlavní navigace">
         <ul class="navigation__list">
-          <li><a class="navigation__list-item" href="#hero">Úvod</a></li>
-          <li><a class="navigation__list-item" href="#expirience">O nás</a></li>
-          <li><a class="navigation__list-item" href="#sluzby">Služby</a></li>
+          <li><a class="navigation__list-item" href="./index.html#hero">Úvod</a></li>
+          <li><a class="navigation__list-item" href="./index.html#expirience">O nás</a></li>
+          <li><a class="navigation__list-item" href="./index.html#sluzby">Služby</a></li>
           <li>
             <a class="navigation__list-item button button--grey" href="#contact"
               >Kontakt</a
@@ -64,30 +64,58 @@
       </button>
     </header>
     <main class="page__main">
-      <section id="hero" class="hero hero--sluzby">
-        <div class="hero__content">
-          <div class="hero__title">
-            <p class="title--eyebrow">Služby</p>
-            <h1>Odtahová služba</h1>
-          </div>
+      <section id="hero" class="hero hero--sluzby hero--odtah">
+        <div class="section-wrapper section-wrapper--hero">
+          <div class="hero__content">
+            <div class="hero__title">
+              <p class="title--eyebrow">Služby</p>
+              <h1>Odtahová služba</h1>
+            </div>
             <p class="hero__content-text">
-            Ať už potřebujete opravit vozidlo, nebo odtahovou službu, jsme tu pro vás.
-            Zajistíme rychlý a bezpečný odtah vašeho auta v jakoukoliv denní dobu, ať už jde o poruchu nebo nehodu.
-            Naše služby poskytujeme ve Vlašimi a okolí, vždy s důrazem na spolehlivost a profesionální přístup.
-          </p>
-          <div class="hero__buttons">
-            <a
-              href="tel:+420725723172"
-              class="button"
-              aria-label="Kontaktovat nás"
-              >Kontaktovat <span class="text-underline">ihned</span></a
-            >
-            <a
-              href="#sluzby"
-              class="button button--grey"
-              aria-label="Zobrazit naše služby"
-              >Naše služby</a
-            >
+              Ať už potřebujete opravit vozidlo, nebo odtahovou službu, jsme tu
+              pro vás
+            </p>
+            <div class="hero__contact">
+              <div class="hero__contact-item">
+                <a
+                  href="tel:+420725723172"
+                  class="hero__contact-text"
+                  aria-label="Telefon: +420 725 723 172"
+                >
+                  <img src="/images/phone.svg" alt="" aria-hidden="true" />
+                  +420 725 723 172
+                </a>
+              </div>
+              <div class="hero__contact-item">
+                <a
+                  target="_blank"
+                  href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
+                  class="hero__contact-text"
+                  aria-label="Adresa: Lidická 566/34, Vlašim"
+                >
+                  <img
+                    src="/images/location-point.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  Lidická 566/34, Vlašim
+                </a>
+              </div>
+            </div>
+            <div class="hero__buttons">
+              <a
+                href="tel:+420725723172"
+                class="button"
+                aria-label="Kontaktovat nás"
+                >Kontaktovat <span class="text-underline">ihned</span></a
+              >
+              <a
+                href="#sluzby"
+                class="button button--grey"
+                aria-label="Zobrazit naše služby"
+                >Naše služby</a
+              >
+            </div>
           </div>
         </div>
         <a
@@ -173,23 +201,24 @@
 
       </section>
 
-      
+     
 
+     
       <section id="contact" class="contact" aria-labelledby="contact-heading">
-       <div class="question__arrow">
+        <div class="contact__arrow">
           <img
-            class="question__arrow-oblouk"
+            class="contact__arrow-oblouk"
             src="/images/oblouk.svg"
             alt=""
             aria-hidden="true"
           />
           <img
-            class="question__wheel question__arrow-wheel"
+            class="contact__wheel contac__arrow-wheel"
             src="/images/wheel.svg"
             alt="Kolo"
           />
         </div>
-        <div class="section-wrapper">
+        <div class="section-wrapper section-wrapper--contact">
           <div class="contact__content">
             <h2 id="contact-heading">Kontakt</h2>
             <div class="contact__content-items">

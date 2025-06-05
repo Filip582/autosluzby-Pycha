@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
  
   ['contact', 'expirience', 'sluzby'].forEach(id => {
-    document.querySelectorAll(`a[href="#${id}"]`).forEach(link => {
+    document.querySelectorAll(`a[href="./index.html#${id}"]`).forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const section = document.getElementById(id);
@@ -168,4 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // Smooth scroll na hash po načtení stránky
+  if (window.location.hash && document.querySelector(window.location.hash)) {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      document.querySelector(window.location.hash).scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  }
 });
