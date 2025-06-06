@@ -114,57 +114,24 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(".hero__arrow--down", { y: 0 });
   }
 
-  // const retez = document.querySelector('.retez-anim');
 
-  // document.querySelectorAll('.sluzby__content-card').forEach(card => {
-  //   card.addEventListener('mouseenter', () => {
-  //     if (!retez) return;
-  //     // Zjisti pozici karty
-  //     const rect = card.getBoundingClientRect();
-  //     // Vypočítej střed karty vůči viewportu
-  //     const left = rect.left + rect.width / 2 - 9 + window.scrollX; // 9 je polovina šířky řetězu (18px)
-  //     const y = rect.top + window.scrollY;
-  //     // Nastav pozici řetězu (zůstává nahoře)
-  //     retez.style.left = `${left}px`;
-  //     retez.style.display = 'block';
-  //     retez.style.opacity = '1';
-  //     retez.style.top = `${y}px`;
-
-  //     // Animace řetězu dolů k hornímu okraji karty (ale top je vždy 0)
-  //     gsap.fromTo(retez,
-  //       { top: '-420px', opacity: 1 },
-  //       { top: '0px', opacity: 1, duration: 0.4, ease: "power1.out" }
-  //     );
-  //     // Animace karty nahoru
-  //     gsap.to(card, { y: -20, duration: 0.3, ease: "power1.out" });
-  //   });
-
-  //   card.addEventListener('mouseleave', () => {
-  //     if (!retez) return;
-  //     // Animace řetězu zpět nahoru
-  //     gsap.to(retez, {
-  //       top: '-420px',
-  //       opacity: 1,
-  //       duration: 0.3,
-  //       onComplete: () => {
-  //         retez.style.display = 'none';
-  //       }
-  //     });
-  //     gsap.to(card, { y: 0, duration: 0.3, ease: "power1.in" });
-  //   });
-  // });
  
   ['contact', 'expirience', 'sluzby'].forEach(id => {
-    document.querySelectorAll(`a[href="/#${id}"]`).forEach(link => {
+    document.querySelectorAll(`a[href="#${id}"], a[href="/#${id}"]`).forEach(link => {
       link.addEventListener('click', function(e) {
-        e.preventDefault();
+        // Find the section on the current page
         const section = document.getElementById(id);
+        // Only prevent default if the section exists here
         if (section) {
+          e.preventDefault();
           section.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
           });
+          // Optionally update the URL hash without reloading
+          history.replaceState(null, '', `#${id}`);
         }
+        // If section does not exist, let the browser handle navigation
       });
     });
   });
@@ -177,11 +144,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 50);
   }
 
+  // PHONE ANIMACE
   document.querySelectorAll('.service-info__card').forEach(card => {
     const phone = card.querySelector('img.service-info__icon[src*="phone.svg"]');
     let phoneTween;
-    card.addEventListener('mouseenter', () => {
-      if (phone) {
+
+    if (phone) {
+      card.addEventListener('mouseenter', () => {
         phoneTween = gsap.to(phone, {
           x: [-2, 2, -2, 2, 0],
           y: [0, -2, 2, -2, 0],
@@ -190,12 +159,32 @@ document.addEventListener("DOMContentLoaded", () => {
           repeat: -1,
           ease: "power1.inOut"
         });
-      }
-    });
-    card.addEventListener('mouseleave', () => {
-      if (phoneTween) phoneTween.kill();
-      if (phone) gsap.to(phone, { x: 0, y: 0, duration: 0.2, ease: "power1.inOut" });
-    });
+      });
+      card.addEventListener('mouseleave', () => {
+        if (phoneTween) phoneTween.kill();
+        gsap.to(phone, { x: 0, y: 0, duration: 0.2, ease: "power1.inOut" });
+      });
+    }
   });
 
+  // CAR ANIMACE s gsap.timeline()
+  document.querySelectorAll('.service-info__card').forEach(card => {
+    const car = card.querySelector('img.service-info__icon.car__icon');
+    let carTimeline;
+
+    if (car) {
+      card.addEventListener('mouseenter', () => {
+        carTimeline = gsap.timeline({ repeat: -1, yoyo: true, defaults: { ease: "power1.inOut" } });
+        carTimeline
+          .to(car, { x: -14, rotate: -15, duration: 0.5 })
+          .to(car, { x: 14, rotate: 15, duration: 0.5 });
+      });
+      card.addEventListener('mouseleave', () => {
+        if (carTimeline) carTimeline.kill();
+        gsap.to(car, { x: 0, y: 0, rotate: 0, duration: 0.2, ease: "power1.inOut" });
+      });
+    }
+  });
+
+  
 });

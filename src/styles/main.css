@@ -31,6 +31,7 @@
     overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: scroll;
+  
   }
   * {
     margin: 0px 0px;
@@ -555,9 +556,7 @@ footer {
   align-items: center;
   gap: 0.5rem;
 }
-.service-info__icon {
-  align-self: center;
-}
+
 @media screen and (min-width: 768px) {
   .item--none {
     display: block;
@@ -675,3 +674,54 @@ footer {
   }
 }
 
+.hero-background--1{
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 6.33%,
+      rgba(0, 0, 0, 0) 99.99%
+    ),
+    linear-gradient(
+      279deg,
+      rgba(0, 0, 0, 0) 20.36%,
+      rgba(0, 0, 0, 0.48) 52.78%,
+      rgba(0, 0, 0, 0.6) 94.92%
+    ),
+    url("/images/background--kamion.png") lightgray 50% / cover no-repeat;
+    animation: hero-fade-2  12s linear infinite;
+}
+
+.hero-background--1{
+  opacity: 1;
+  inset: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 6.33%,
+      rgba(0, 0, 0, 0) 99.99%
+    ),
+    linear-gradient(
+      279deg,
+      rgba(0, 0, 0, 0) 20.36%,
+      rgba(0, 0, 0, 0.48) 52.78%,
+      rgba(0, 0, 0, 0.6) 94.92%
+    ),
+    url("/images/background__image-2.png") lightgray 50% / cover no-repeat;
+  animation: hero-fade-1 12s linear infinite;
+}
+
+@keyframes hero-fade-1 {
+  0%   { opacity: 1; }
+  40%  { opacity: 1; }
+  50%  { opacity: 0; }
+  90%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes hero-fade-2 {
+  0%   { opacity: 0; }
+  40%  { opacity: 0; }
+  50%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}
