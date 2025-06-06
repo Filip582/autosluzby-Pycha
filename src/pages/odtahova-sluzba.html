@@ -41,9 +41,9 @@
       <a class="logo" href="#" aria-label="Domů">Autoslužby Luboš Pýcha</a>
       <nav class="hamburger-nav hamburger-zone" aria-label="Hlavní navigace">
         <ul class="navigation__list">
-          <li><a class="navigation__list-item" href="./index.html#hero">Úvod</a></li>
-          <li><a class="navigation__list-item" href="./index.html#expirience">O nás</a></li>
-          <li><a class="navigation__list-item" href="./index.html#sluzby">Služby</a></li>
+          <li><a class="navigation__list-item" href="/#hero">Úvod</a></li>
+          <li><a class="navigation__list-item" href="/#expirience">O nás</a></li>
+          <li><a class="navigation__list-item" href="/#sluzby">Služby</a></li>
           <li>
             <a class="navigation__list-item button button--grey" href="#contact"
               >Kontakt</a
@@ -148,7 +148,12 @@
               <li><p><strong>Vyproštění</strong> - pomoc při zapadnutí nebo uvíznutí vozu.</p></li>
             </ul>
           </div>
-          <img src="/images/time-icon.svg" width="65" height="64" alt="" aria-hidden="true" class="service-info__icon" />
+          <div class="service-info__icon">
+            <div class="clock--background"></div>
+            <div class="clock--hand1"></div>
+            <div class="clock--hand2"></div>
+          </div>
+
         </div>
 
         <div class="service-info__card">
@@ -161,7 +166,7 @@
               <li><p><strong>Vyproštění</strong> - pomoc při zapadnutí nebo uvíznutí vozu.</p></li>
             </ul>
           </div>
-          <img src="/images/car-icon.svg" width="65" height="64" alt="" aria-hidden="true" class="service-info__icon" />
+          <img src="/images/car-icon.svg" width="65" height="64" alt="" aria-hidden="true" class="service-info__icon car__icon" />
         </div>
 
         <div class="service-info__card">
@@ -204,7 +209,7 @@
      
 
      
-      <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <section id="contact" class="contact contact--sluzby" aria-labelledby="contact-heading">
         <div class="contact__arrow">
           <img
             class="contact__arrow-oblouk"

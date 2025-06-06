@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
  
   ['contact', 'expirience', 'sluzby'].forEach(id => {
-    document.querySelectorAll(`a[href="./index.html#${id}"]`).forEach(link => {
+    document.querySelectorAll(`a[href="/#${id}"]`).forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const section = document.getElementById(id);
@@ -176,4 +176,26 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(window.location.hash).scrollIntoView({ behavior: "smooth" });
     }, 50);
   }
+
+  document.querySelectorAll('.service-info__card').forEach(card => {
+    const phone = card.querySelector('img.service-info__icon[src*="phone.svg"]');
+    let phoneTween;
+    card.addEventListener('mouseenter', () => {
+      if (phone) {
+        phoneTween = gsap.to(phone, {
+          x: [-2, 2, -2, 2, 0],
+          y: [0, -2, 2, -2, 0],
+          yoyo: true,
+          duration: 0.1,
+          repeat: -1,
+          ease: "power1.inOut"
+        });
+      }
+    });
+    card.addEventListener('mouseleave', () => {
+      if (phoneTween) phoneTween.kill();
+      if (phone) gsap.to(phone, { x: 0, y: 0, duration: 0.2, ease: "power1.inOut" });
+    });
+  });
+
 });
