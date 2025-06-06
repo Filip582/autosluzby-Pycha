@@ -38,11 +38,13 @@
   </head>
   <body>
     <header class="page__header">
-      <a class="logo" href="./index.html" aria-label="Domů">Autoslužby Luboš Pýcha</a>
+      <a class="logo" href="#" aria-label="Domů">Autoslužby Luboš Pýcha</a>
       <nav class="hamburger-nav hamburger-zone" aria-label="Hlavní navigace">
         <ul class="navigation__list">
           <li><a class="navigation__list-item" href="/#hero">Úvod</a></li>
-          <li><a class="navigation__list-item" href="/#expirience">O nás</a></li>
+          <li>
+            <a class="navigation__list-item" href="/#expirience">O nás</a>
+          </li>
           <li><a class="navigation__list-item" href="/#sluzby">Služby</a></li>
           <li>
             <a class="navigation__list-item button button--grey" href="#contact"
@@ -64,19 +66,17 @@
       </button>
     </header>
     <main class="page__main">
-      <section id="hero" class="hero hero--main">
-        <div class="hero-background--2"></div>
-        <div class="hero-background--1"></div>
+      <section id="hero" class="hero hero--sluzby hero--servis">
         <div class="section-wrapper section-wrapper--hero">
-
           <div class="hero__content">
             <div class="hero__title">
-              <p class="title--eyebrow">Kvalitní</p>
-              <h1>Odtahová služba a autoservis</h1>
+              <p class="title--eyebrow">Služby</p>
+              <h1>Servis vozů</h1>
             </div>
             <p class="hero__content-text">
-              Ať už potřebujete opravit vozidlo, nebo odtahovou službu, jsme tu
-              pro vás
+              Nabízíme kompletní servis osobních i užitkových vozidel.
+              Pravidelné prohlídky, výměny kapalin, opravy a údržba pro dlouhou
+              životnost a spolehlivost vašeho vozu.
             </p>
             <div class="hero__contact">
               <div class="hero__contact-item">
@@ -110,7 +110,7 @@
                 href="tel:+420725723172"
                 class="button"
                 aria-label="Kontaktovat nás"
-                >Kontaktovat</a
+                >Objednat servis</a
               >
               <a
                 href="#sluzby"
@@ -140,197 +140,148 @@
         </a>
       </section>
 
-      <section id="expirience" class="expirience">
-        <img
-          class="expirience__image"
-          src="/images/expirience__image-1.png"
-          alt="Auto v servisu"
-        />
-        <div class="expirience__content">
-          <img
-            class="expirience__wheel"
-            src="/images/wheel.svg"
-            alt="Ikona kola"
-          />
-          <div class="expirience__content-text">
-            <h2>Několik let zkušeností</h2>
-            <p>
-              Náš autoservis a autoslužbu profesionálně provádíme ve Vlašimi už
-              X let a nabrali jsme spoustu zkušeností, které nám pomáhají
-              poskytnout vám výjimečné služby.
-            </p>
+      <section class="service-info">
+        <div class="service-info__card">
+          <div class="service-info__content">
+            <h3>Kdy využít servis vozidla?</h3>
+            <ul>
+              <li>
+                <p>
+                  <strong>Pravidelná údržba</strong> – výměna oleje, filtrů,
+                  kapalin a kontrola technického stavu.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Neobvyklé zvuky nebo chování vozu</strong> –
+                  diagnostika a odstranění závad.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Příprava na STK</strong> – kontrola a oprava před
+                  technickou kontrolou.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Sezónní servis</strong> – přezutí pneumatik, kontrola
+                  klimatizace, baterie a další.
+                </p>
+              </li>
+            </ul>
           </div>
-          <a class="button" href="#" aria-label="Objednat se do servisu"
-            >Objednat se</a
-          >
+          <div class="service-info__icon">
+            <div class="clock--background"></div>
+            <div class="clock--hand1"></div>
+            <div class="clock--hand2"></div>
+          </div>
         </div>
-        <img
-          class="expirience__image"
-          src="/images/expirience__image-2.png"
-          alt="Auto po opravě"
-        />
+
+        <div class="service-info__card">
+          <div class="service-info__content">
+            <h3>Co zahrnuje servis vozidla?</h3>
+            <ul>
+              <li>
+                <p>
+                  <strong>Diagnostika a opravy</strong> – zjištění a odstranění
+                  závad motoru, brzd, podvozku a dalších částí.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Výměna provozních kapalin</strong> – olej, chladicí
+                  kapalina, brzdová kapalina.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Kontrola a seřízení</strong> – geometrie, světla,
+                  klimatizace, baterie.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Karosářské a lakýrnické práce</strong> – opravy po
+                  nehodách i drobné úpravy.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="/images/car-icon.svg"
+            width="65"
+            height="64"
+            alt=""
+            aria-hidden="true"
+            class="service-info__icon car__icon"
+          />
+        </div>
+
+        <div class="service-info__card">
+          <div class="service-info__content">
+            <h3>Objednejte si servis vozidla</h3>
+            <p>
+              Potřebujete servis vašeho vozu? Kontaktujte nás a domluvte si
+              termín. Zajistíme kompletní servis a údržbu pro bezpečný a
+              spolehlivý provoz vašeho automobilu.
+            </p>
+
+            <div class="service-info-item">
+              <a
+                href="tel:+420725723172"
+                class="service-info-text"
+                aria-label="Telefon: +420 725 723 172"
+              >
+                <img src="/images/phone.svg" alt="" aria-hidden="true" />
+                +420 725 723 172
+              </a>
+            </div>
+            <div class="service-info-item">
+              <a
+                target="_blank"
+                href="https://maps.google.com/?q=Lidická+566/34,+Vlašim"
+                class="service-info-text"
+                aria-label="Adresa: Lidická 566/34, Vlašim"
+              >
+                <img
+                  src="/images/location-point.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Lidická 566/34, Vlašim
+              </a>
+            </div>
+          </div>
+          <img
+            src="/images/phone.svg"
+            width="65"
+            height="64"
+            alt=""
+            aria-hidden="true"
+            class="item--none service-info__icon"
+          />
+        </div>
       </section>
 
-      <section id="sluzby" class="sluzby">
-        <div class="sluzby__content-text grid-item--2x1">
-          <h2>Naše služby</h2>
-          <p>
-            Nabízíme širokou paletu služeb. Od klasického servisu auta, až po
-            odtahovou službu.
-          </p>
-        </div>
-        <a href="./odtahova-sluzba.html" class="sluzby__content-card grid-item--2x1">
+      <section
+        id="contact"
+        class="contact contact--sluzby"
+        aria-labelledby="contact-heading"
+      >
+        <div class="contact__arrow">
           <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-1.png"
-            alt="Odtahová služba"
-          />
-          <p>Odtahová služba</p>
-          <div class="linear-gradient"></div>
-        </a>
-        <a href="./oprava-aut-sluzby.html" class="sluzby__content-card grid-item--2x1">
-          <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-2.png"
-            alt="Oprava auta"
-          />
-          <p>Oprava auta</p>
-          <div class="linear-gradient"></div>
-        </a>
-        <a href="./servis-vozu-sluzby.html" class="sluzby__content-card grid-item--2x1">
-          <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-3.png"
-            alt="Servis vozu"
-          />
-          <p>Servis vozu</p>
-          <div class="linear-gradient"></div>
-        </a>
-        <a href="priprava-na-stk-sluzby.html" class="sluzby__content-card grid-item--1x1">
-          <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-4.png"
-            alt="Příprava na STK"
-          />
-          <p>Příprava na STK</p>
-          <div class="linear-gradient"></div>
-        </a>
-        <a href="opravy-motooru-sluzby.html" class="sluzby__content-card grid-item--1x1">
-          <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-5.png"
-            alt="Opravy motoru"
-          />
-          <p>Opravy motoru</p>
-          <div class="linear-gradient"></div>
-        </a>
-        <a href="prezuti-pneu-sluzby.html" class="sluzby__content-card grid-item--1x1">
-          <img
-            class="content-card__img img-responsive"
-            src="/images/sluzby__image-6.png"
-            alt="Přezutí pneu"
-          />
-          <p>Přezutí pneu</p>
-          <div class="linear-gradient"></div>
-        </a>
-      </section>
-
-      <section class="question" aria-labelledby="faq-heading">
-        <div class="question__arrow">
-          <img
-            class="question__arrow-oblouk"
+            class="contact__arrow-oblouk"
             src="/images/oblouk.svg"
             alt=""
             aria-hidden="true"
           />
           <img
-            class="question__wheel question__arrow-wheel"
+            class="contact__wheel contac__arrow-wheel"
             src="/images/wheel.svg"
             alt="Kolo"
           />
         </div>
-        <div class="section-wrapper">
-          <div class="question__content">
-            <div class="question__title">
-              <h2 id="faq-heading">Často kladené dotazy</h2>
-              <p>
-                Máte otázku, nebo něčemu nerozumíte? Možná odpověď najdete v často
-                kladených dotazech
-              </p>
-            </div>
-            <div class="accordion" aria-labelledby="faq-heading">
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Je potřeba se na servis objednat předem?
-                  </button>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Doporučujeme se objednat předem, abychom vám mohli garantovat
-                    co nejkratší čekací dobu.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Jak dlouho trvá běžná servisní prohlídka?
-                  </button>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Běžná prohlídka zabere přibližně 1–2 hodiny, podle rozsahu a
-                    typu vozidla.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Provádíte také přípravu na STK a emisní kontrolu?
-                  </button>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Ano, připravíme váš vůz na STK včetně základní kontroly a
-                    případné opravy závad.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Jak rychle můžete přijet po zavolání?
-                  </button>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Většinou dorazíme do 30–60 minut, podle dopravní situace a
-                    vzdálenosti. Vždy se snažíme dorazit co nejdříve.
-                  </p>
-                </div>
-              </div>
-              <div class="ac">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger">
-                    Kolik stojí odtah vozidla a účtujete si více za víkendy?
-                  </button>
-                </h2>
-                <div class="ac-panel">
-                  <p class="ac-text">
-                    Cena závisí na vzdálenosti a čase zásahu. Máme nonstop provoz,
-                    víkendy a noční zásahy jsou možné, ale mohou být zpoplatněny
-                    příplatkem.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact" aria-labelledby="contact-heading">
         <div class="section-wrapper section-wrapper--contact">
           <div class="contact__content">
             <h2 id="contact-heading">Kontakt</h2>
