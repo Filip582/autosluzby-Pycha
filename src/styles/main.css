@@ -114,21 +114,31 @@
   position: relative;
 }
 
-.hero--sluzby {
+.hero--odtah {
   height: 40vh;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 6.33%,
-      rgba(0, 0, 0, 0) 99.99%
-    ),
-    linear-gradient(
-      279deg,
-      rgba(0, 0, 0, 0) 20.36%,
-      rgba(0, 0, 0, 0.48) 52.78%,
-      rgba(0, 0, 0, 0.6) 94.92%
-    ),
-    url("/images/background__image-2.png") lightgray 50% / cover no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/odtahova-sluzba-4k.jpg") center/cover no-repeat;
 }
+.hero--oprava-aut{
+  height: 40vh;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/oprava-aut-4k.jpg") center/cover no-repeat;
+}
+.hero--motor{
+  height: 40vh;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/oprava-motoru-4k.jpg") center/cover no-repeat;
+}
+.hero--pneu{
+  height: 40vh;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/pneu-4k.jpg") center/cover no-repeat;
+}
+.hero--stk{
+  height: 40vh;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/priprava-na-stk-4k.jpg") center/cover no-repeat;
+}
+.hero--servis{
+  height: 40vh;
+  background: linear-gradient(180deg,rgba(0,0,0,0.6) 6.33%,rgba(0,0,0,0) 99.99%),linear-gradient(279deg,rgba(0,0,0,0) 20.36%,rgba(0,0,0,0.48) 52.78%,rgba(0,0,0,0.6) 94.92%),url("/images/servis-vozu-4k.jpg") center/cover no-repeat;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -469,8 +479,8 @@
   align-items: center;
 }
 .contact--sluzby {
-    margin-top: calc(var(--section-gap-mobile));
-  }
+  margin-top: calc(var(--section-gap-mobile));
+}
 
 .contact__arrow-oblouk {
   position: absolute;
