@@ -186,5 +186,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Detekce mobilního zařízení
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+    if (!isMobile) {
+      e.preventDefault();
+      const kontakt = document.getElementById('contact');
+      if (kontakt) {
+        kontakt.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+  });
 });
