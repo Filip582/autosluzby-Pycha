@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://autosluzby-pycha.cz/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/odtahova-sluzba.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/oprava-aut-sluzby.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/servis-vozu-sluzby.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/priprava-na-stk-sluzby.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/opravy-motooru-sluzby.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://autosluzby-pycha.cz/prezuti-pneu-sluzby.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
